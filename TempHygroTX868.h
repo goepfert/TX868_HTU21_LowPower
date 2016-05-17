@@ -53,16 +53,12 @@ public:
 	enum datatype_t {HTV, NONE};
 
 private:
-	//void sendData(byte* data, byte length);
 	void sendByte(byte value);
 	void sendBit(byte value);
-	//void sendNibble(byte value);
 
 	byte m_pin;
-	//byte m_addr;
 	unsigned long m_nextSlope;
 	byte data[8];
-	//datatype_t m_datatype;
 
 	void sendEOF();
 
@@ -72,9 +68,7 @@ public:
 	void setAddress(byte addr);
 	void setDataType(TempHygroTX868::datatype_t datatype);
 	void setData(float temp, float humidity, float voltage);
-	//void send(float temp, float humidity);
 	void send();
-	//int getPause();
 };
 
 #endif
