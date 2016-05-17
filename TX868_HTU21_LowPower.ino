@@ -1,5 +1,7 @@
 /*
   Required libraries:
+    - TempHygroTX868: https://github.com/skaringa/TempHygroTX868
+      Note: modified local version
     - SparkFunHTU21D: https://github.com/sparkfun/SparkFun_HTU21D_Breakout_Arduino_Library
 
    Hardware setup:
@@ -8,7 +10,7 @@
      - analog voltage read on pin A0
 */
 
-#include <TempHygroTX868.h>
+#include "TempHygroTX868.h"
 #include <SparkFunHTU21D.h>
 
 #include <avr/sleep.h>
